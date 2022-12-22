@@ -1,0 +1,78 @@
+html, body{
+    /*font-size: 15px;*/
+    /*line-height: 1.6;*/
+    height: 100%;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    /*background-color: #142233;*/
+  
+    overflow: hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top:20px ;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+.list__files{
+    margin-top: 50px;
+}
+
+.files__link{
+    display: block;
+    padding: 10px;
+}
+
+.status{
+    width: 300px;
+    height: 100px;
+}
+
+
+.status__success__icon{
+    text-align: center;
+}
+
+.status__icon{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+#hideMeAfter5Seconds {
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
